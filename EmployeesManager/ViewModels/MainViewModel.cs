@@ -23,14 +23,13 @@ namespace EmployeesManager.ViewModels
 
         public MainViewModel()
         {
-            //Logon();
-
             AddEmployeeCommand = new RelayCommand(AddEmployee);
             EditEmployeeCommand = new RelayCommand(EditEmployee, CanEditDissambleEmployee);
             DissambleEmployeeCommand = new RelayCommand(DissambleEmployee, CanEditDissambleEmployee);
             EmployeeGroupChangedCommand = new RelayCommand(EmployeeGroupChanged);
             DBConfigCommand = new RelayCommand(SetDBConfig);
 
+            Logon();
             CheckDBConnection();
         }
 

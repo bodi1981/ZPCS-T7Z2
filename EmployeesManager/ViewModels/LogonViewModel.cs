@@ -50,7 +50,7 @@ namespace EmployeesManager.ViewModels
                 CloseWindow(obj as Window);
             }
             else
-                MessageBox.Show("Błędny nazwa użytkownia i/lub hasło", "Błąd", MessageBoxButton.OK, MessageBoxImage.Stop);
+                MessageBox.Show("Błędna nazwa użytkownia i/lub hasło", "Błąd", MessageBoxButton.OK, MessageBoxImage.Stop);
         }
 
         private void ExecChangePassword(object obj)
